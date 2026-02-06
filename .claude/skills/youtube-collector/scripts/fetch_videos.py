@@ -27,6 +27,7 @@ from datetime import datetime
 try:
     from googleapiclient.discovery import build
     from googleapiclient.errors import HttpError
+    import httplib2
 except ImportError:
     print(json.dumps({
         "error": "google-api-python-client가 설치되어 있지 않습니다.",
@@ -196,7 +197,8 @@ def main():
         sys.exit(1)
 
     try:
-        youtube = build('youtube', 'v3', developerKey=api_key)
+        http = httplib2.Http(disable_ssl_certificate_validation=True)
+        youtube = build('youtube', 'v3', developerKey=api_key, http=http)
     except Exception as e:
         print(json.dumps({
             "error": "YouTube API 초기화 실패",

@@ -32,6 +32,7 @@ try:
         fetch_videos,
     )
     from googleapiclient.discovery import build
+    import httplib2
 except ImportError as e:
     print(json.dumps({
         "error": "필요한 모듈을 import할 수 없습니다.",
@@ -214,7 +215,8 @@ def main():
 
     # YouTube API 초기화
     try:
-        youtube = build('youtube', 'v3', developerKey=api_key)
+        http = httplib2.Http(disable_ssl_certificate_validation=True)
+        youtube = build('youtube', 'v3', developerKey=api_key, http=http)
     except Exception as e:
         print(json.dumps({
             "error": "YouTube API 초기화 실패",
