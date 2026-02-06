@@ -27,6 +27,9 @@ SUBDIRS = ["sources", "insights", "selected", "research", "outlines", "feedback"
 RUN_YAML_TEMPLATE = {
     "created_at": None,
     "status": "initialized",
+    "config": {
+        "article_count": 2,
+    },
     "phases": {
         "collect": {"status": "pending", "started_at": None, "completed_at": None},
         "insight": {"status": "pending", "started_at": None, "completed_at": None},
@@ -40,7 +43,7 @@ RUN_YAML_TEMPLATE = {
 }
 
 
-def init_run(base_dir: str, run_date: str) -> dict:
+def init_run(base_dir: str, run_date: str, article_count: int = 2) -> dict:
     run_path = Path(base_dir) / "runs" / run_date
 
     if run_path.exists():
@@ -51,23 +54,26 @@ def init_run(base_dir: str, run_date: str) -> dict:
         (run_path / subdir).mkdir(parents=True, exist_ok=True)
 
     # run.yaml 생성
-    run_data = RUN_YAML_TEMPLATE.copy()
+    import copy
+    run_data = copy.deepcopy(RUN_YAML_TEMPLATE)
     run_data["created_at"] = run_date
+    run_data["config"]["article_count"] = article_count
 
     run_yaml_path = run_path / "run.yaml"
     with open(run_yaml_path, "w", encoding="utf-8") as f:
         yaml.dump(run_data, f, allow_unicode=True, default_flow_style=False, sort_keys=False)
 
-    return {"run_path": str(run_path), "status": "initialized", "date": run_date}
+    return {"run_path": str(run_path), "status": "initialized", "date": run_date, "article_count": article_count}
 
 
 def main():
     parser = argparse.ArgumentParser(description="블로그 실행 디렉토리 초기화")
     parser.add_argument("--date", default=str(date.today()), help="실행 날짜 (기본: 오늘)")
     parser.add_argument("--base-dir", default="blog", help="블로그 기본 디렉토리 (기본: blog)")
+    parser.add_argument("--article-count", type=int, default=2, help="목표 글 개수 (기본: 2)")
     args = parser.parse_args()
 
-    result = init_run(args.base_dir, args.date)
+    result = init_run(args.base_dir, args.date, article_count=args.article_count)
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
     if "error" in result:

@@ -19,11 +19,16 @@ allowed-tools: Read, Write, Glob, Grep, Bash(python3:*)
    python3 .claude/skills/blog-workflow/scripts/update_status.py --run-dir {run_dir} --phase insight --status in_progress
    ```
 
-3. `{run_dir}/sources/source-index.yaml`을 읽는다
+3. `{run_dir}/run.yaml`을 읽어서 `config.article_count` 값을 확인한다
 
-4. 각 영상의 summary 분석. summary가 없으면 `source_path`의 원본 파일에서 description 참조
+4. `{run_dir}/sources/source-index.yaml`을 읽는다
 
-5. 영상들 간 공통 주제, 트렌드, 독특한 관점을 교차 분석하여 5~10개 인사이트 추출
+5. 각 영상의 summary 분석. summary가 없으면 `source_path`의 원본 파일에서 description 참조
+
+6. `article_count`에 따라 분석 규모를 조절한다:
+   - 추출할 인사이트 수 = `article_count * 3` (선택 여지 확보)
+   - 자막 심층 분석 영상 수 = `article_count * 5` (나머지는 summary만 참조)
+   - 영상들 간 공통 주제, 트렌드, 독특한 관점을 교차 분석
 
 6. `{run_dir}/insights/insights.yaml`에 저장:
    ```yaml

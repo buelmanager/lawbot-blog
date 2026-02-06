@@ -13,12 +13,17 @@ You are a content strategist specialized in extracting blog-worthy insights from
 
 ## Process
 
-1. `{run_dir}/sources/source-index.yaml` 읽기
-2. 각 영상의 `summary` 및 `transcript_preview` 필드 분석 (summary가 없는 항목은 `source_path`에서 원본 파일의 summary.content 참조)
-3. `has_transcript: true`인 영상은 `source_path`의 원본 파일에서 `transcript.text`를 **적극적으로** 참조하여 핵심 내용 확인
-4. 영상들 간 공통 주제, 트렌드, 독특한 관점을 교차 분석
-5. 5~10개의 블로그 인사이트 추출
-6. `{run_dir}/insights/insights.yaml`에 저장
+1. `{run_dir}/run.yaml` 읽어서 `config.article_count` 확인 (기본값: 2)
+2. `{run_dir}/sources/source-index.yaml` 읽기
+3. `article_count`에 따라 분석 규모 결정:
+   - **추출할 인사이트 수** = `article_count * 3` (선택 여지 확보, 최소 3개)
+   - **자막 심층 분석 영상 수** = `article_count * 5` (최소 5개, 전체 영상 수 이하)
+   - 나머지 영상은 `summary`와 `transcript_preview`만 참조
+4. 각 영상의 `summary` 및 `transcript_preview` 필드 분석 (summary가 없는 항목은 `source_path`에서 원본 파일의 summary.content 참조)
+5. 심층 분석 대상 영상 중 `has_transcript: true`인 영상은 `source_path`의 원본 파일에서 `transcript.text`를 **적극적으로** 참조하여 핵심 내용 확인
+6. 영상들 간 공통 주제, 트렌드, 독특한 관점을 교차 분석
+7. 결정된 개수만큼 블로그 인사이트 추출
+8. `{run_dir}/insights/insights.yaml`에 저장
 
 ## Output Format
 

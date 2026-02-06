@@ -3,7 +3,7 @@
 .reference/contents/의 YouTube 데이터를 경량 인덱스로 변환
 
 Usage:
-    python index_sources.py --run-dir blog/runs/2026-02-06 [--source-dir .reference/contents]
+    python index_sources.py --run-dir blog/runs/2026-02-06 [--source-dir .reference/contents] [--channels aiDotEngineer,otherChannel]
 
 Output:
     JSON 형식으로 인덱싱 결과 출력
@@ -21,7 +21,38 @@ except ImportError:
     sys.exit(1)
 
 
-def index_sources(source_dir: str, run_dir: str) -> dict:
+def list_channels(source_dir: str, channels_yaml: str = ".reference/channels.yaml") -> dict:
+    """등록된 채널 목록과 각 채널의 영상 수를 반환"""
+    source_path = Path(source_dir)
+    channels_path = Path(channels_yaml)
+
+    result = []
+
+    if channels_path.exists():
+        with open(channels_path, "r", encoding="utf-8") as f:
+            data = yaml.safe_load(f) or {}
+        registered = {c.get("handle", "").lstrip("@"): c.get("name", "") for c in data.get("channels", [])}
+    else:
+        registered = {}
+
+    if not source_path.exists():
+        return {"channels": [], "error": f"소스 디렉토리 없음: {source_dir}"}
+
+    for channel_dir in sorted(source_path.iterdir()):
+        if not channel_dir.is_dir():
+            continue
+        handle = channel_dir.name
+        video_count = len(list(channel_dir.glob("*.yaml")))
+        result.append({
+            "handle": handle,
+            "name": registered.get(handle, handle),
+            "video_count": video_count,
+        })
+
+    return {"channels": result}
+
+
+def index_sources(source_dir: str, run_dir: str, channels: list[str] | None = None) -> dict:
     source_path = Path(source_dir)
     run_path = Path(run_dir)
 
@@ -36,6 +67,10 @@ def index_sources(source_dir: str, run_dir: str) -> dict:
             continue
 
         channel_handle = channel_dir.name
+
+        # 채널 필터링: 지정된 채널만 인덱싱
+        if channels and channel_handle not in channels:
+            continue
 
         for yaml_file in sorted(channel_dir.glob("*.yaml")):
             try:
@@ -82,11 +117,23 @@ def index_sources(source_dir: str, run_dir: str) -> dict:
 
 def main():
     parser = argparse.ArgumentParser(description="YouTube 소스 데이터 인덱싱")
-    parser.add_argument("--run-dir", required=True, help="실행 디렉토리 경로")
+    parser.add_argument("--run-dir", help="실행 디렉토리 경로")
     parser.add_argument("--source-dir", default=".reference/contents", help="소스 디렉토리 (기본: .reference/contents)")
+    parser.add_argument("--channels", help="인덱싱할 채널 목록 (쉼표 구분, 예: aiDotEngineer,otherChannel)")
+    parser.add_argument("--list-channels", action="store_true", help="등록된 채널 목록 출력")
     args = parser.parse_args()
 
-    result = index_sources(args.source_dir, args.run_dir)
+    if args.list_channels:
+        result = list_channels(args.source_dir)
+        print(json.dumps(result, ensure_ascii=False, indent=2))
+        return
+
+    if not args.run_dir:
+        print(json.dumps({"error": "--run-dir 필수 (--list-channels 제외)"}))
+        sys.exit(1)
+
+    channels = [c.strip() for c in args.channels.split(",")] if args.channels else None
+    result = index_sources(args.source_dir, args.run_dir, channels=channels)
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
     if "error" in result:

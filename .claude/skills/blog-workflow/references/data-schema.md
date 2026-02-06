@@ -5,6 +5,8 @@
 ```yaml
 created_at: "2026-02-06"
 status: "initialized"  # initialized | in_progress | completed
+config:
+  article_count: 2      # 목표 글 개수 (분석 규모 결정)
 phases:
   collect:
     status: "pending"     # pending | in_progress | completed | skipped
