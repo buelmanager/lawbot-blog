@@ -1,0 +1,37 @@
+created_at: 2026-02-06-02
+status: completed
+config:
+  article_count: 1
+phases:
+  collect:
+    status: completed
+    started_at: null
+    completed_at: '2026-02-06T09:19:24.657984Z'
+  insight:
+    status: completed
+    started_at: '2026-02-06T09:19:40.381741Z'
+    completed_at: '2026-02-06T09:21:28.703756Z'
+  review_insights:
+    status: completed
+    started_at: null
+    completed_at: '2026-02-06T09:22:00.097745Z'
+  research:
+    status: completed
+    started_at: '2026-02-06T09:22:19.692620Z'
+    completed_at: '2026-02-06T09:28:48.151042Z'
+  outline:
+    status: completed
+    started_at: '2026-02-06T09:29:03.516605Z'
+    completed_at: '2026-02-06T09:31:23.642099Z'
+  review_outlines:
+    status: completed
+    started_at: null
+    completed_at: '2026-02-06T09:31:23.764131Z'
+  write:
+    status: completed
+    started_at: '2026-02-06T09:31:41.214062Z'
+    completed_at: '2026-02-06T09:34:25.867753Z'
+topics:
+- slug: child-support-enforcement-guide
+  title: 양육비를 확실히 받는 법 - 소멸시효부터 강제집행까지 완벽 가이드
+  added_at: '2026-02-06T09:22:00.246309Z'
