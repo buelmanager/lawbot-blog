@@ -1,0 +1,62 @@
+---
+const siteName = 'LawBot 무료 법률 상담';
+---
+
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="logo">{siteName}</a>
+    <nav>
+      <a href="/">글 목록</a>
+      <a href="https://lawbot-public.vercel.app" target="_blank" rel="noopener" class="cta">
+        무료 법률 상담
+      </a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header {
+    border-bottom: 1px solid #e5e7eb;
+    background: #fff;
+  }
+  .header-inner {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #111827;
+    text-decoration: none;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  nav a {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 0.875rem;
+  }
+  nav a:hover {
+    color: #111827;
+  }
+  .cta {
+    color: #fff !important;
+    background: #2563eb;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: background 0.15s;
+  }
+  .cta:hover {
+    background: #1d4ed8;
+    color: #fff !important;
+  }
+</style>

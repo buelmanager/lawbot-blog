@@ -1,0 +1,73 @@
+---
+interface Props {
+  title: string;
+  date: string;
+  description: string;
+  tags: string[];
+  slug: string;
+}
+
+const { title, date, description, tags, slug } = Astro.props;
+---
+
+<article class="card">
+  <a href={`/articles/${slug}`} class="card-link">
+    <time datetime={date}>{date}</time>
+    <h2>{title}</h2>
+    <p>{description}</p>
+  </a>
+  <div class="tags">
+    {tags.map((tag) => (
+      <a href={`/tags/${tag}`} class="tag">#{tag}</a>
+    ))}
+  </div>
+</article>
+
+<style>
+  .card {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #f3f4f6;
+  }
+  .card-link {
+    text-decoration: none;
+    display: block;
+  }
+  .card-link:hover h2 {
+    color: #2563eb;
+  }
+  time {
+    font-size: 0.8125rem;
+    color: #9ca3af;
+  }
+  h2 {
+    margin: 0.375rem 0 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #111827;
+    line-height: 1.4;
+    transition: color 0.15s;
+  }
+  p {
+    margin: 0;
+    font-size: 0.9375rem;
+    color: #6b7280;
+    line-height: 1.6;
+  }
+  .tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    flex-wrap: wrap;
+  }
+  .tag {
+    font-size: 0.75rem;
+    color: #2563eb;
+    text-decoration: none;
+    background: #eff6ff;
+    padding: 0.125rem 0.5rem;
+    border-radius: 9999px;
+  }
+  .tag:hover {
+    background: #dbeafe;
+  }
+</style>

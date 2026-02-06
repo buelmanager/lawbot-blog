@@ -1,0 +1,63 @@
+---
+import SEOHead from '../components/SEOHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  type?: 'website' | 'article';
+  publishedDate?: string;
+}
+
+const { title, description, type, publishedDate } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <SEOHead
+      title={title}
+      description={description}
+      type={type}
+      publishedDate={publishedDate}
+    />
+  </head>
+  <body>
+    <Header />
+    <main class="main">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style is:global>
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      'Noto Sans KR', sans-serif;
+    color: #111827;
+    background: #fff;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .main {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>

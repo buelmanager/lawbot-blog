@@ -1,0 +1,66 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  canonicalUrl?: string;
+  type?: 'website' | 'article';
+  publishedDate?: string;
+}
+
+const siteName = 'LawBot 무료 법률 상담';
+const {
+  title,
+  description,
+  canonicalUrl = Astro.url.href,
+  type = 'website',
+  publishedDate,
+} = Astro.props;
+
+const fullTitle = `${title} | ${siteName}`;
+
+const naverVerification = import.meta.env.PUBLIC_NAVER_VERIFICATION;
+const googleVerification = import.meta.env.PUBLIC_GOOGLE_VERIFICATION;
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalUrl} />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="sitemap" href="/sitemap-index.xml" />
+
+<!-- Open Graph -->
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content={type} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:site_name" content={siteName} />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+
+{naverVerification && (
+  <meta name="naver-site-verification" content={naverVerification} />
+)}
+{googleVerification && (
+  <meta name="google-site-verification" content={googleVerification} />
+)}
+
+{type === 'article' && publishedDate && (
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: title,
+      description: description,
+      datePublished: publishedDate,
+      author: { '@type': 'Organization', name: siteName },
+      publisher: { '@type': 'Organization', name: siteName },
+    })}
+  />
+)}

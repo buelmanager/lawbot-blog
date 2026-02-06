@@ -1,12 +1,12 @@
-selected_at: "2026-02-06T04:00:00Z"
+selected_at: "2026-02-06T06:15:00Z"
 topics:
-  - insight_id: "INS-004"
-    slug: "agent-native-mcp-design"
-    title: "에이전트 네이티브 제품 디자인: MCP 서버가 실패하는 이유"
-    angle: "에이전트 네이티브 디자인 3원칙: Discovery, Iteration, Context"
-    user_note: ""
-  - insight_id: "INS-008"
-    slug: "context-engineering-file-system"
-    title: "Context Engineering: 파일 시스템을 활용한 에이전트 메모리 관리"
-    angle: "파일 시스템의 3가지 역할: 메모리, 문서화, 검증 수단"
-    user_note: ""
+  - insight_id: "INS-001"
+    slug: "industrial-accident-claim-writing-strategy"
+    title: "산재 신청 승인율을 높이는 재해경위서 작성 전략"
+    angle: "공단 조사관이 반박 못 하는 '숫자와 묘사의 기술' + 병원 초진기록 불일치 시 소명서 방어법"
+    user_note: null
+  - insight_id: "INS-002"
+    slug: "industrial-accident-re-treatment-guide"
+    title: "산재 종결 후에도 포기하지 마라: 재요양 제도 완전 가이드"
+    angle: "'소멸시효 3년' 오해 깨기 + 재요양 vs 최초요양 vs 추가상병 상황별 안내"
+    user_note: null

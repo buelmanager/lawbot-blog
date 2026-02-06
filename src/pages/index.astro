@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+
+const articles = (await getCollection('articles')).sort(
+  (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
+---
+
+<BaseLayout
+  title="홈"
+  description="법률 정보를 쉽고 정확하게 전달하는 블로그입니다."
+>
+  <section>
+    <h1 class="page-title">최신 글</h1>
+    {articles.length === 0 && <p class="empty">아직 작성된 글이 없습니다.</p>}
+    {articles.map((article) => (
+      <ArticleCard
+        title={article.data.title}
+        date={article.data.date}
+        description={article.data.description}
+        tags={article.data.tags}
+        slug={article.id}
+      />
+    ))}
+  </section>
+</BaseLayout>
+
+<style>
+  .page-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #111827;
+  }
+  .empty {
+    color: #9ca3af;
+    padding: 2rem 0;
+  }
+</style>

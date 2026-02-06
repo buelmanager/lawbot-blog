@@ -1,0 +1,108 @@
+topic: "industrial-accident-claim-writing-strategy"
+researched_at: "2026-02-06T06:45:00Z"
+
+queries:
+  - query: "재해경위서 작성법 산재 승인"
+    language: "ko"
+  - query: "산재 불승인 사유 통계 2025 2026"
+    language: "ko"
+  - query: "산재 기왕증 퇴행성 승인 판례"
+    language: "ko"
+  - query: "산재 초진기록 불일치 소명서 작성법"
+    language: "ko"
+  - query: "산재 재해경위서 금기어 실수 사례"
+    language: "ko"
+  - query: "근로복지공단 산재 조사관 판단 기준"
+    language: "ko"
+  - query: "industrial accident claim writing tips Korea"
+    language: "en"
+  - query: "workers compensation claim denial statistics 2025"
+    language: "en"
+
+findings:
+  trends:
+    - point: "산재 승인율은 90% 이상으로 높은 편이나, 불승인 시 재신청과 심사청구를 통해 승인받을 수 있는 가능성이 높음"
+      source: "https://www.safety1st.news/news/articleView.html?idxno=4329"
+
+    - point: "업무상 질병 산재 처리 기간을 2027년까지 평균 227일에서 120일로 단축하고, 행정소송 판례를 분석하여 패소율이 높은 질병의 인정기준을 재정비하는 정책 추진 중"
+      source: "https://www.korea.kr/news/policyNewsView.do?newsId=148948479"
+
+    - point: "재해경위서는 법정서식이 아닌 자유서식으로, 육하원칙(누가, 언제, 어디서, 무엇을, 어떻게, 왜)에 따라 시간 순서로 사실관계를 정확히 기술하는 것이 핵심"
+      source: "https://cpuholic.com/entry/산재-사고-발생-시-사고경위서-작성-양식-및-작성법"
+
+    - point: "미국의 경우 초기 산재 청구의 약 7-20%가 거부되지만, 거부된 청구의 67%가 1년 내 재심사를 통해 승인되며, 전환된 청구의 보상금은 평균 55% 더 높음"
+      source: "https://riskandinsurance.com/70-percent-denied-comp-claims-converted-and-paid/"
+
+  expert_opinions:
+    - who: "법무법인 이현"
+      opinion: "산재 불승인을 받아도 재신청, 심사청구, 재심사청구, 행정소송 등 4단계 불복 절차가 있으며, 각 단계에서 충분한 증거와 소명자료를 보강하면 승인 가능성이 높아짐"
+      source: "https://blog.ehyun.co.kr/work-accident-reapproval-guide"
+
+    - who: "산재 전문 변호사"
+      opinion: "기왕증이나 퇴행성 질환이 의무기록에 표시되어도 산재를 포기할 이유가 없음. 오히려 기존의 취약한 관절 상태 위에 지속적이고 반복적인 노동 강도가 누적되었다는 점을 구조적으로 제시해야 함"
+      source: "WebSearch 결과 종합"
+
+    - who: "근로복지공단"
+      opinion: "사고성 재해의 경우 자문의사의 소견을 받아 승인 여부를 결정하며, 업무 기인성(업무로부터 기인한 위험으로 발생했는지)을 주요 판단 기준으로 삼음"
+      source: "https://www.comwel.or.kr/comwel/comp/proc.jsp"
+
+    - who: "산재 전문 노무사"
+      opinion: "팔꿈치 관절염은 다른 관절보다 흔하지 않으며, 망치질이나 용접 같은 작업을 하는 경우 퇴행성 관절염이 조기에 진행될 가능성이 높다는 의학적 소견이 인정되고 있음"
+      source: "WebSearch 결과 종합"
+
+  statistics:
+    - stat: "한국의 산재 승인율은 90% 이상으로, 신청 대비 승인율이 높은 편"
+      source: "https://www.safety1st.news/news/articleView.html?idxno=4329"
+
+    - stat: "2025년 3분기까지 재해조사 대상 사망자는 457명으로 2024년 같은 기간(443명)보다 14명(3.2%) 증가"
+      source: "WebSearch 결과"
+
+    - stat: "미국의 경우 평균 20%의 산재 청구가 거부되며, 주별로 차이가 있음. 미네소타주의 경우 2023년 거부율은 16.6%로 2022년 17.4%보다 소폭 감소"
+      source: "https://www.samsara.com/guides/how-many-workers-comp-claims-are-denied"
+
+    - stat: "미국에서 산재 청구를 받은 근로자의 47%가 초기 거부를 경험했으나, 이 중 상당수가 항소를 통해 승인을 받음"
+      source: "https://www.lawyers.com/legal-info/workers-compensation/denied-workers-comp-claims-how-can-i-win-benefits-after-a-denial.html"
+
+    - stat: "거부 후 승인으로 전환된 청구의 보상금은 원래 청구액보다 평균 55% 더 높음"
+      source: "https://riskandinsurance.com/70-percent-denied-comp-claims-converted-and-paid/"
+
+  counterpoints:
+    - point: "근로자의 고의나 자해 행위, 범죄행위로 발생한 부상은 산업재해로 인정되지 않음"
+      source: "https://www.comwel.or.kr/comwel/comp/recu/appl01.jsp"
+
+    - point: "재해경위서 작성 시 작은 실수 하나가 전체 결과에 큰 영향을 미칠 수 있으므로 신중하고 체계적인 대응이 필요함"
+      source: "https://thr-law.co.kr/industrial/board/column/view/no/6990"
+
+    - point: "초진기록과 재해경위서 내용이 불일치할 경우 신빙성에 문제가 생길 수 있으며, 이때 별도의 소명이 필요할 수 있음"
+      source: "WebSearch 결과 종합"
+
+    - point: "출퇴근 산재 인정을 악용한 사례가 적발되는 등, 허위 신청에 대한 공단의 조사가 강화되고 있음"
+      source: "https://www.anjunj.com/news/articleView.html?idxno=35891"
+
+  case_studies:
+    - title: "기왕증·퇴행성 질환의 산재 인정 판례"
+      summary: "영상자료나 의무기록에 '퇴행성'이라는 표현이 있어도 작업 특성, 근속기간, 근무 형태, 하루 작업시간, 쪼그림·회전·중량물 취급 빈도 등을 체계적으로 구조화해 제시하면 인과관계를 입증할 수 있음. 무릎 인공관절 치환술의 경우도 단순히 퇴행성으로 볼 수 없으며, 반복적 노동 강도가 누적된 점을 증명해야 함"
+      source: "WebSearch 결과 종합"
+
+    - title: "재해경위서 작성의 핵심 원칙"
+      summary: "육하원칙에 따라 시간 순서로 사실관계를 명확히 기술하는 것이 중요. 법정서식이 아닌 자유서식이므로 구체적인 숫자(시간, 무게, 거리 등)와 상세한 묘사를 통해 객관성을 높여야 함"
+      source: "https://cpuholic.com/entry/산재-사고-발생-시-사고경위서-작성-양식-및-작성법"
+
+    - title: "한국 산재보상 신청 절차"
+      summary: "1명 이상의 직원을 고용한 모든 사업장에서 의무 가입하는 산재보험 제도. 근로자는 요양급여 신청서, 산재용 진단서, 재해경위서, 근로계약서 등을 근로복지공단에 제출하며, 공단은 7일 이내 승인 여부를 결정. 불만족 시 90일 이내 이의신청 가능"
+      source: "https://seoullawgroup.com/workers-compensation-korea/"
+
+    - title: "업무상 질병 특별진찰제도"
+      summary: "근골격계질병, 뇌심혈관계질병, 소음성 난청, 정신질병 산재 신청 대상자에 대해 업무관련성을 판단하기 위한 특별진찰제도를 운영 중. 이를 통해 더 정확한 의학적 소견을 확보할 수 있음"
+      source: "https://www.delightlabor.com/information/?bmode=view&idx=29437638"
+
+key_insights:
+  - "재해경위서는 '숫자와 묘사의 기술'이 중요함. 추상적 표현보다 구체적인 수치(시간, 무게, 거리, 빈도)를 명시하고, 시간 순서에 따라 사실관계를 정확히 기술해야 공단 조사관이 반박하기 어려움"
+
+  - "기왕증이나 퇴행성 질환이 있어도 산재 승인이 불가능한 것은 아님. 오히려 반복적이고 누적된 업무 강도가 질병을 악화시켰다는 인과관계를 체계적으로 입증하면 승인 가능성이 높아짐"
+
+  - "초진기록과 재해경위서의 불일치는 신빙성 문제를 야기할 수 있으므로, 초진 시 병원에서 정확한 발생 경위를 설명하는 것이 중요하며, 불일치 시 소명서를 통해 합리적으로 설명해야 함"
+
+  - "산재 불승인을 받아도 재신청, 심사청구, 재심사청구, 행정소송까지 4단계 불복 절차가 있으며, 각 단계에서 추가 증거와 의학적 소견을 보강하면 승인 가능성이 높아짐"
+
+  - "업무 기인성(업무로부터 기인한 위험)이 가장 중요한 판단 기준이므로, 작업 환경, 업무 내용, 사고 발생 메커니즘을 명확히 설명하는 것이 핵심"

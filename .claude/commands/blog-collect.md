@@ -7,6 +7,19 @@ allowed-tools: Bash(python3:*), AskUserQuestion
 
 블로그 워크플로우의 첫 단계: 오늘 날짜로 실행 디렉토리를 생성하고 YouTube 소스 데이터를 인덱싱한다.
 
+### 사전 처리: 사용자 입력에 YouTube URL이 포함된 경우
+
+사용자가 YouTube 채널 URL (예: `https://www.youtube.com/@handle/videos`)을 함께 제공한 경우:
+
+1. URL에서 채널 핸들을 추출한다
+2. `--list-channels` 결과에 해당 채널이 없으면 **자동으로 등록 + 수집**을 먼저 실행한다:
+   ```bash
+   python3 .claude/skills/youtube-collector/scripts/register_channel.py --channel-url "{url}" --output-dir .reference/
+   python3 .claude/skills/youtube-collector/scripts/collect_videos.py --channel-handle @{handle} --output-dir .reference/ --max-results 10
+   ```
+3. 수집된 영상에 summary가 없으면, 각 영상 YAML의 `description` 필드를 기반으로 summary를 생성하여 해당 YAML 파일에 저장한다
+4. 등록/수집 완료 후 아래 실행 순서로 진행한다
+
 ### 실행 순서
 
 1. 등록된 채널 목록 조회:
@@ -21,6 +34,7 @@ allowed-tools: Bash(python3:*), AskUserQuestion
    - 옵션: 개별 채널들 + "전체 채널" 옵션
    - multiSelect: true (복수 선택 가능)
    - 사용자가 "전체 채널"을 선택하면 --channels 옵션 없이 실행
+   - 사전 처리에서 새 채널이 등록된 경우 해당 채널을 기본 선택으로 안내
 
    **질문 2: 목표 글 개수**
    - "블로그 글을 몇 편 생성할까요?"
