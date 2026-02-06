@@ -1,0 +1,37 @@
+created_at: 2026-02-06-03
+status: completed
+config:
+  article_count: 1
+phases:
+  collect:
+    status: completed
+    started_at: null
+    completed_at: '2026-02-06T10:17:37.884861Z'
+  insight:
+    status: completed
+    started_at: null
+    completed_at: '2026-02-06T10:17:37.987854Z'
+  review_insights:
+    status: completed
+    started_at: null
+    completed_at: '2026-02-06T10:17:38.099293Z'
+  research:
+    status: completed
+    started_at: '2026-02-06T10:17:59.684192Z'
+    completed_at: '2026-02-06T10:22:43.985393Z'
+  outline:
+    status: completed
+    started_at: '2026-02-06T10:22:44.099092Z'
+    completed_at: '2026-02-06T10:26:08.508370Z'
+  review_outlines:
+    status: completed
+    started_at: null
+    completed_at: '2026-02-06T10:26:08.607319Z'
+  write:
+    status: completed
+    started_at: '2026-02-06T10:26:08.712361Z'
+    completed_at: '2026-02-06T10:28:33.561041Z'
+topics:
+- slug: small-claims-consumer-guide
+  title: 패키지여행 분쟁부터 배우는 소액사건심판 활용법
+  added_at: '2026-02-06T10:17:38.197926Z'
