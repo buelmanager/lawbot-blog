@@ -1,0 +1,12 @@
+selected_at: "2026-02-06T04:00:00Z"
+topics:
+  - insight_id: "INS-004"
+    slug: "agent-native-mcp-design"
+    title: "에이전트 네이티브 제품 디자인: MCP 서버가 실패하는 이유"
+    angle: "에이전트 네이티브 디자인 3원칙: Discovery, Iteration, Context"
+    user_note: ""
+  - insight_id: "INS-008"
+    slug: "context-engineering-file-system"
+    title: "Context Engineering: 파일 시스템을 활용한 에이전트 메모리 관리"
+    angle: "파일 시스템의 3가지 역할: 메모리, 문서화, 검증 수단"
+    user_note: ""

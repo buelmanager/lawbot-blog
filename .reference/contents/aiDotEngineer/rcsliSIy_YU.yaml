@@ -1,0 +1,29 @@
+video_id: rcsliSIy_YU
+title: Automating Large Scale Refactors with Parallel Agents - Robert Brennan, AllHands
+published_at: '2026-01-08T16:30:23Z'
+url: https://youtube.com/watch?v=rcsliSIy_YU
+thumbnail: https://i.ytimg.com/vi/rcsliSIy_YU/maxresdefault.jpg
+description: 'Today''s agents are best at small, atomic coding tasks. Much larger
+  tasks--like major refactors and breaking dependency updates--are highly automatable
+  but hard to one-shot.
+
+
+  In this session, we''ll discuss patterns for orchestrating large-scale code changes
+  with swarms of agents and a human in the loop.
+
+
+  We''ll also work through a concrete example: migrating an entire codebase from one
+  React state management library to another.
+
+
+  https://twitter.com/RobertBrennan
+
+
+  Slides: https://dub.sh/openhands-workshop'
+duration: PT1H16M21S
+collected_at: '2026-02-06T03:45:21.619454Z'
+transcript:
+  available: false
+  language: null
+  text: null
+summary: null

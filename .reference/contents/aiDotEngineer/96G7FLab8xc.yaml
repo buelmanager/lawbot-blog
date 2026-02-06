@@ -1,0 +1,34 @@
+video_id: 96G7FLab8xc
+title: Your MCP Server is Bad (and you should feel bad) - Jeremiah Lowin, Prefect
+published_at: '2026-01-12T18:00:06Z'
+url: https://youtube.com/watch?v=96G7FLab8xc
+thumbnail: https://i.ytimg.com/vi/96G7FLab8xc/maxresdefault.jpg
+description: 'Too many MCP servers are simply glorified REST wrappers, regurgitating
+  APIs that were designed for SDKs, not agents. This leads to confused LLMs, wasted
+  tokens, and demonstrably poor performance. If you''ve ever pointed an MCP generator
+  at an OpenAPI spec and called it a day, this talk is your intervention.
+
+
+  Like any product, great MCP servers are the result of careful design. This talk
+  shares the hard-won lessons from creating FastMCP, the most popular framework for
+  building MCP servers (and yes, for generating them, too). The secret is to stop
+  thinking about endpoints and start thinking about products. We will cover the three
+  pillars of agent-native product design—Discovery, Iteration, and Context—providing
+  an actionable framework for curating context into small, highly effective surface
+  areas that lead to better AI outcomes.
+
+
+  Jeremiah Lowin, CEO of Prefect
+
+  https://twitter.com/jlowin
+
+  https://www.linkedin.com/in/jlowin
+
+  https://github.com/jlowin'
+duration: PT54M33S
+collected_at: '2026-02-06T03:45:21.616347Z'
+transcript:
+  available: false
+  language: null
+  text: null
+summary: null

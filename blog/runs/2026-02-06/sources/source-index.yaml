@@ -1,0 +1,97 @@
+indexed_at: '2026-02-06'
+count: 10
+sources:
+- video_id: k1t2xyWMUdY
+  title: How METR measures Long Tasks and Experienced Open Source Dev Productivity
+    - Joel Becker, METR
+  channel: aiDotEngineer
+  published_at: '2026-01-19T14:00:06Z'
+  url: https://youtube.com/watch?v=k1t2xyWMUdY
+  duration: PT1H15M52S
+  has_transcript: false
+  summary: null
+  source_path: /Users/chulheewon/development/main_project/agent_project/cc-system/.reference/contents/aiDotEngineer/k1t2xyWMUdY.yaml
+- video_id: VSdV-AdSlis
+  title: Identity for AI Agents - Patrick Riley & Carlos Galan, Auth0
+  channel: aiDotEngineer
+  published_at: '2026-01-14T15:03:01Z'
+  url: https://youtube.com/watch?v=VSdV-AdSlis
+  duration: PT1H22M12S
+  has_transcript: false
+  summary: null
+  source_path: /Users/chulheewon/development/main_project/agent_project/cc-system/.reference/contents/aiDotEngineer/VSdV-AdSlis.yaml
+- video_id: k8cnVCMYmNc
+  title: 'OpenAI + @Temporalio : Building Durable, Production Ready Agents - Cornelia
+    Davis, Temporal'
+  channel: aiDotEngineer
+  published_at: '2026-01-12T19:30:06Z'
+  url: https://youtube.com/watch?v=k8cnVCMYmNc
+  duration: PT1H18M30S
+  has_transcript: false
+  summary: null
+  source_path: /Users/chulheewon/development/main_project/agent_project/cc-system/.reference/contents/aiDotEngineer/k8cnVCMYmNc.yaml
+- video_id: 96G7FLab8xc
+  title: Your MCP Server is Bad (and you should feel bad) - Jeremiah Lowin, Prefect
+  channel: aiDotEngineer
+  published_at: '2026-01-12T18:00:06Z'
+  url: https://youtube.com/watch?v=96G7FLab8xc
+  duration: PT54M33S
+  has_transcript: false
+  summary: null
+  source_path: /Users/chulheewon/development/main_project/agent_project/cc-system/.reference/contents/aiDotEngineer/96G7FLab8xc.yaml
+- video_id: HY_JyxAZsiE
+  title: 'Spec-Driven Development: Agentic Coding at FAANG Scale and Quality — Al
+    Harris, Amazon Kiro'
+  channel: aiDotEngineer
+  published_at: '2026-01-09T15:15:06Z'
+  url: https://youtube.com/watch?v=HY_JyxAZsiE
+  duration: PT1H3M50S
+  has_transcript: false
+  summary: null
+  source_path: /Users/chulheewon/development/main_project/agent_project/cc-system/.reference/contents/aiDotEngineer/HY_JyxAZsiE.yaml
+- video_id: -cKUW6n8hBU
+  title: 'DSPy: The End of Prompt Engineering - Kevin Madura, AlixPartners'
+  channel: aiDotEngineer
+  published_at: '2026-01-08T20:48:21Z'
+  url: https://youtube.com/watch?v=-cKUW6n8hBU
+  duration: PT1H13M13S
+  has_transcript: false
+  summary: null
+  source_path: /Users/chulheewon/development/main_project/agent_project/cc-system/.reference/contents/aiDotEngineer/-cKUW6n8hBU.yaml
+- video_id: rcsliSIy_YU
+  title: Automating Large Scale Refactors with Parallel Agents - Robert Brennan, AllHands
+  channel: aiDotEngineer
+  published_at: '2026-01-08T16:30:23Z'
+  url: https://youtube.com/watch?v=rcsliSIy_YU
+  duration: PT1H16M21S
+  has_transcript: false
+  summary: null
+  source_path: /Users/chulheewon/development/main_project/agent_project/cc-system/.reference/contents/aiDotEngineer/rcsliSIy_YU.yaml
+- video_id: SbcQYbrvAfI
+  title: Build a Prompt Learning Loop - SallyAnn DeLucia & Fuad Ali, Arize
+  channel: aiDotEngineer
+  published_at: '2026-01-06T17:30:06Z'
+  url: https://youtube.com/watch?v=SbcQYbrvAfI
+  duration: PT52M8S
+  has_transcript: false
+  summary: null
+  source_path: /Users/chulheewon/development/main_project/agent_project/cc-system/.reference/contents/aiDotEngineer/SbcQYbrvAfI.yaml
+- video_id: kmV-qg4uoNI
+  title: Building durable Agents with Workflow DevKit & AI SDK - Peter Wielander,
+    Vercel
+  channel: aiDotEngineer
+  published_at: '2026-01-06T16:00:07Z'
+  url: https://youtube.com/watch?v=kmV-qg4uoNI
+  duration: PT1H9M49S
+  has_transcript: false
+  summary: null
+  source_path: /Users/chulheewon/development/main_project/agent_project/cc-system/.reference/contents/aiDotEngineer/kmV-qg4uoNI.yaml
+- video_id: TqC1qOfiVcQ
+  title: Claude Agent SDK [Full Workshop] — Thariq Shihipar, Anthropic
+  channel: aiDotEngineer
+  published_at: '2026-01-05T17:00:06Z'
+  url: https://youtube.com/watch?v=TqC1qOfiVcQ
+  duration: PT1H52M25S
+  has_transcript: false
+  summary: null
+  source_path: /Users/chulheewon/development/main_project/agent_project/cc-system/.reference/contents/aiDotEngineer/TqC1qOfiVcQ.yaml

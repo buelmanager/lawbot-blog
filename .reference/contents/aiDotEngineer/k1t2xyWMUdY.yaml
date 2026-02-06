@@ -1,0 +1,82 @@
+video_id: k1t2xyWMUdY
+title: How METR measures Long Tasks and Experienced Open Source Dev Productivity -
+  Joel Becker, METR
+published_at: '2026-01-19T14:00:06Z'
+url: https://youtube.com/watch?v=k1t2xyWMUdY
+thumbnail: https://i.ytimg.com/vi/k1t2xyWMUdY/maxresdefault.jpg
+description: 'AI models are crushing benchmarks. SWE-bench scores are climbing, and
+  METR''s measured time horizons are rising rapidly. Yet when we deployed these same
+  models in a field study with experienced developers, they didn''t speed up work.
+  What''s going on? Are benchmarks misleading us about AI capabilities? Are we missing
+  something about how AI performs in the real world? In this talk, we''ll reconcile
+  lab and field evidence on AI capabilities. Drawing from METR''s time horizon measurements
+  and developer productivity RCT, we''ll explore why impressive benchmark performance
+  doesn''t always translate to real-world impact. We''ll examine potential explanations—from
+  reliability requirements to task distribution to capability elicitation—and discuss
+  what this means for automated AI R&D.
+
+
+  https://x.com/joel_bkr
+
+
+  Timestamps
+
+  00:00 The Compute-Time Horizon Argument
+
+
+  01:43 Potential Constraints on AI Scaling (Power & Dollars)
+
+
+  04:23 The Problem of Eclipsing Evaluation Time
+
+
+  06:52 Meta''s "J-Curve" of Developer Productivity
+
+
+  09:12 Unreliability of Self-Reported Time Estimates
+
+
+  11:43 Personal Experiences with AI Tools (Cursor) & Learning Curves
+
+
+  14:10 METR Study Deep Dive: Scatter Plots & Variance
+
+
+  16:48 The Controversy of "Conservative" Usage Estimates
+
+
+  21:41 Unpublished Hackathon Results (AI Allowed vs. Disallowed)
+
+
+  25:28 Why AI Struggles with Data Science & Messy Enterprise Data
+
+
+  30:35 Example of AI Failure on Complex Deployment Metrics
+
+
+  38:29 Quantifying Speed-Up: The Methodological Challenges
+
+
+  46:30 Future Metrics: "Watched" vs. "Unwatched" Time Horizons
+
+
+  52:52 Moving Beyond Benchmarks: "In the Wild" Transcripts
+
+
+  56:12 The "Agent Village" & Fuzzy Goal Measurement
+
+
+  58:53 The "Neurodivergent AI" Hypothesis & Interface Mismatch
+
+
+  01:06:31 Software-Only Singularity vs. Hardware Constraints
+
+
+  01:13:53 AI Applications in Chip Fabrication & Yield Improvement'
+duration: PT1H15M52S
+collected_at: '2026-02-06T03:45:21.613074Z'
+transcript:
+  available: false
+  language: null
+  text: null
+summary: null
